@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<style>
+		body, html {
+		  height: 100%;
+		  margin : 0;
+		  font-family: 'Arial', sans-serif;
+		}
+
+		.container {
+		  display: flex;
+		  height: 100%;
+		}
+
+		.left-side {
+		  width: 60%;
+		  background-color: #1f2029;
+		  color: white;
+		  padding: 30px;
+		  position: relative;
+		}
+
+		.right-side {
+		  width: 60%;
+		  background-color: #20c997;
+		}
+
+		.content {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+
+		h4 {
+		  font-size: 14px;
+		  margin-bottom: 5px;
+		  color: #20c997;
+		  text-transform: uppercase;
+		}
+
+		h1 {
+		  font-size: 48px;
+		  margin: 0;
+		}
+
+		h2 {
+		  font-size: 36px;
+		  margin: 0;
+		}
+
+		.button {
+		  background-color: #20c997;
+		  color: white;
+		  padding: 10px 20px;
+		  border: none;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin-top: 20px;
+		  border-radius: 5px;
+		  cursor: pointer;
+		}
+
+		.button:hover {
+		  background-color: #3d23cf;
+		}
+
+		.contact-info {
+		  text-align: right;
+		  color: white;
+		}
+
+		.contact-info h3 {
+		  gap: 20px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  font-size: 18px;
+		  margin-bottom: 10px;
+		}
+
+		.contact-info a {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  color: white;
+		  text-decoration: none;
+		  margin-right: 10px;
+		}
+
+		.contact-info i {
+		  font-size: 18px;
+		}
+
+		.container2 {
+		  color: #fff;
+		  display: flex;
+		  flex-direction: row;
+		  margin: 0;
+		  padding: 0;
+		  background-color: #1f2029;
+		}
+
+		.left-section {
+		  margin-top: 150px;
+		  width: 40%;
+		  background-color: #1f2029;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.right-section {
+		  width: 60%;
+		  padding: 20px;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.right-section h1 {
+		  font-size: 36px;
+		  margin-bottom: 20px;
+		}
+
+		.right-section p {
+		  color: #fff;
+		  font-size: 18px;
+		  margin-bottom: 20px;
+		  margin-right: 50px;
+		}
+
+		.btn {
+		  display: flex;
+		  background-color: #333;
+		  color: #fff;
+		  padding: 10px 20px;
+		  border: 2px solid rgb(235, 63, 220);
+		  border-radius: 5px;
+		  cursor: pointer;
+		  margin: 10px;
+		}
+
+		.btn:hover {
+		  background-color: #ec2884;
+		}
+
+		.btns {
+		  display: flex;
+		}
+		.btns a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.portfolio {
+		  background-color: #1f2937;
+		  color: white;
+		  padding: 50px;
+		}
+
+		.portfolio h2 {
+		  text-align: center;
+		  font-size: 3em;
+		  margin-bottom: 30px;
+		}
+
+		.project-grid {
+		  display: flex;
+		  justify-content: space-around;
+		}
+
+		.project-item {
+			margin-top: 30px;
+		  text-align: center;
+		}
+
+		.project-item img {
+		  padding-top: 100px;
+		  width: 100%;
+		  max-width: 300px;
+		  height: auto;
+		}
+
+		.container4 {
+		  max-width: 1200px;
+		  margin: 0 auto;
+		  padding: 2rem;
+		  background-color: #1f2937;
+		  color: #eef2ee;
+		}
+
+		h1 {
+		  font-size: 3rem;
+		  margin-bottom: 1rem;
+		}
+
+		.work-item {
+		  display: flex;
+		  align-items: center;
+		  margin-bottom: 3rem;
+		}
+
+		.work-item img {
+		  margin-right: 2rem;
+		}
+
+		.work-description h3 {
+		  color: #00ff00;
+		  margin-bottom: 0.5rem;
+		}
+
+		.see-more {
+		  padding-left: 200px;
+		  color: #00ff00;
+		  text-decoration: none;
+		}
+
+		.container5 {
+		  display: flex;
+		  background-color: #1a1a1a;
+		}
+
+		.left-side1 {
+		  width: 60%;
+		  padding: 50px;
+		  color: #fff;
+		}
+
+		.left-side1 h1 {
+		  font-size: 24px;
+		  margin-bottom: 10px;
+		}
+
+		.left-side1 h2 {
+		  font-size: 36px;
+		  margin-bottom: 20px;
+		}
+
+		.left-side1 p {
+		  font-size: 18px;
+		  margin-bottom: 30px;
+		}
+
+		.skills {
+		  margin-top: 50px;
+		}
+
+		.skill {
+		  margin-bottom: 20px;
+		}
+
+		.skill h3 {
+		  font-size: 18px;
+		  margin-bottom: 10px;
+		}
+
+		.progress-bar {
+		  width: 100%;
+		  height: 20px;
+		  background-color: #333;
+		  border-radius: 5px;
+		  overflow: hidden;
+		}
+
+		.progress {
+		  display: flex;
+		  height: 100%;
+		  background-color: #40c463;
+		  border-radius: 5px;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.right-side1 {
+		  width: 40%;
+		  padding: 100px;
+		  background-color: #1f2937;
+		}
+
+		.container {
+		  position: relative;
+		}
+
+		.background-image {
+		  margin-top: 70px;
+		  background-color: white;
+		  width: 70%;
+		  height: 55%;
+		  object-fit: cover;
+		}
+
+		.background-image1 {
+		  margin-top: 40px;
+		  background-color: white;
+		  width: 70%;
+		  height: 80%;
+		  object-fit: cover;
+		}
+
+		.overlay-image1 {
+		  display: flex;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 70%;
+		  height: 80%;
+		  object-fit: cover;
+		  margin-left: 20px;
+		  margin-top: 20px;
+		}
+
+		.overlay-image {
+		  display: flex;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 55%;
+		  object-fit: cover;
+		  margin-left: 20px;
+		  margin-top: 45px;
+		}
+
+		.achievement-section {
+		  font-family: sans-serif;
+		  background-color: #1f2937;
+		  color: white;
+		  padding: 20px;
+		}
+
+		.achievement-section2 {
+		  display: flex;
+		  flex-direction: row;
+		  font-family: sans-serif;
+		  background-color: #1f2937;
+		  color: white;
+		  padding: 20px;
+		}
+
+		.achievement-grid {
+		  padding-top: 50px;
+		  display: grid;
+		  grid-template-columns: 1fr 1fr 1fr;
+		  gap: 20px;
+		}
+
+		.achievement-box2 {
+		  width: 50%;
+		  height: auto;
+		  margin-top: 20px;
+		  background-color: #6b0359;
+		  padding: 20px;
+		  border-radius: 8px;
+		  border: 2px solid rgb(14, 222, 139);
+		}
+
+		.achievement-box2:hover {
+		  background-color: sandybrown;
+		}
+
+		.achievement-box {
+		  background-color: #111827;
+		  padding: 20px;
+		  border-radius: 8px;
+		  transition: background-color 0.3s ease;
+		  border: 2px solid yellowgreen;
+		}
+
+		.achievement-box:hover {
+		  background-color: #19eaa4;
+		}
+
+		.typing-text {
+		  font-size: 24px;
+		  color: #e81313;
+		  overflow: hidden;
+		  white-space: nowrap;
+		  width: 0;
+		  animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+		  margin-bottom: 30px;
+		}
+
+		@keyframes typing {
+		  from {
+			width: 0;
+		  }
+		  to {
+			width: 100%;
+		  }
+		}
+
+		@keyframes blink-caret {
+		  from,
+		  to {
+			border-color: transparent;
+		  }
+		  50% {
+			border-color: black;
+		  }
+		}
+
+		.contact {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-direction: row;
+		  gap: 20px;
+		  margin-top: 40px;
+		}
+
+		.contactme {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-direction: column;
+		  gap: 10px;
+		  width: 200px;
+		  height: auto;
+		  margin-bottom: 20px;
+		}
+
+		.socialmedia {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  width: 100px;
+		  height: auto;
+		  gap: 60px;
+		}
+
+		.socialmedia img {
+		  width: 100px;
+		  height: 50px;
+		}
+
+		.navbar {
+		  display: flex;
+		}
+
+		nav ul {
+		  display: flex;
+		  list-style: none;
+		  padding: 10px;
+		}
+
+		nav ul li {
+		  margin-right: 20px;
+		}
+
+		nav ul li a {
+		  text-decoration: none;
+		  color: rgb(16, 15, 15);
+		  position: relative;
+		  padding-bottom: 5px;
+		}
+
+		nav ul li a::after {
+		  content: "";
+		  position: absolute;
+		  width: 0;
+		  height: 2px;
+		  background-color: #e45112;
+		  bottom: 0;
+		  left: 0;
+		  transition: width 0.4s ease-in-out;
+		}
+
+		nav ul li a:hover::after {
+		  width: 100%;
+		}
+
+		nav ul li a:hover {
+		  color: rgb(47, 26, 243);
+		}
+
+		.footer {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  background-color: #333;
+		  color: #fff;
+		  padding: 20px;
+		  text-align: center;
+		  clear: both;
+		}
+
+		.footer .container {
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+
+		.footer-message {
+		  font-size: 16px;
+		  margin-bottom: 10px;
+		}
+
+		.footer-message:last-child {
+		  margin-bottom: 0;
+		}
+		.right-side img{
+			filter:drop-shadow(10px 12px 8px rgb(13, 13, 13));
+		}
+		.project-item img{
+  border: 2px solid;
+  padding: 1px;
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+  animation: animate-border 5s infinite linear;
+  transition: transform 0.3s ease-in-out;
+}
+.project-item img:hover{
+
+	animation: bounce 0.5s  ease;
+}
+
+
+.container {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add this to your existing CSS for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+@keyframes animate-border {
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: orange;
+  }
+  50% {
+    border-color: yellow;
+  }
+  75% {
+    border-color: green;
+  }
+  100% {
+    border-color: blue;
+  }
+}
+.work-item img {
+	margin-top: 30px;
+	padding: 2px;
+	border: 2px solid white;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the bounce effect */
+}
+
+.work-item img:hover {
+  /* transform: scale(1.1);  */
+  animation: bounce 0.5s  infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move upward slightly to create the bounce */
+  }
+}
+b{
+	color: #ec2884;
+}
+
+		/* Mobile Devices (max-width: 480px) */
+		@media only screen and (max-width: 480px) {
+		  .container {
+			flex-direction: column;
+		  }
+		  .left-side {
+			width: 100%;
+		  }
+
+		  .right-side {
+			width: 200%;
+		  }
+		  .contact-info {
+			text-align: center;
+		  }
+		  .contact-info img {
+			width: 50%;
+		  }
+		  .navbar {
+			flex-direction: column;
+		  }
+		  nav ul {
+			flex-direction: column;
+		  }
+		  nav ul li {
+			margin-bottom: 10px;
+		  }
+		  .project-grid {
+			flex-direction: column;
+		  }
+		  .project-item {
+			margin-bottom: 20px;
+		  }
+		  .work-item {
+			flex-direction: column;
+		  }
+		  .work-item img {
+			width: 100%;
+			height: auto;
+		  }
+		  .achievement-grid {
+			grid-template-columns: 1fr;
+		  }
+		  .achievement-box {
+			margin-bottom: 20px;
+		  }
+		  .contact {
+			flex-direction: column;
+		  }
+		  .contactme {
+			margin-bottom: 20px;
+		  }
+		  .socialmedia {
+			flex-direction: column;
+		  }
+		  .socialmedia img {
+			width: 50%;
+		  }
+		}
+		.left-section,.right-section{
+			width: 50%;
+			height: 70%;
+		}
+		.left-section {
+			margin-top: 100px;
+			margin-left: 50px;
+			width: 700px;
+			height: 500px;
+		}
+		.right-section{
+			margin-top: 100px;
+		}
+		.left-side1{
+			width: 50%;
+			height: 6%;
+		}
+		.right-side1{
+			width: 50%;
+			
+		}
+		.right-side1 img{
+			width: 300px;
+
+		}
+		/* Tablets (max-width: 768px) */
+		@media only screen and (max-width: 768px) {
+		  .container {
+			flex-direction: column;
+		  }
+
+		  .left-side {
+			width: 100%;
+		  }
+		  .right-side {
+			width: 100%;
+		  }
+		  .contact-info {
+			text-align: center;
+		  }
+		  .contact-info img {
+			width: 50%;
+		  }
+		  .navbar {
+			flex-direction: column;
+		  }
+		  nav ul {
+			flex-direction: column;
+		  }
+		  nav ul li {
+			margin-bottom: 10px;
+		  }
+		  .project-grid {
+			flex-direction: column;
+		  }
+		  .project-item {
+			margin-bottom: 20px;
+		  }
+		  .work-item {
+			flex-direction: column;
+		  }
+		  .work-item img {
+			width: 100%;
+			height: auto;
+		  }
+		  .achievement-grid {
+			grid-template-columns: 1fr 1fr;
+		  }
+		  .achievement-box {
+			margin-bottom: 20 px;
+		  }
+		  .contact {
+			flex-direction: column;
+		  }
+		  .contactme {
+			margin-bottom: 20px;
+		  }
+		  .socialmedia {
+			flex-direction: column;
+		  }
+		  .socialmedia img {
+			width: 50%;
+		  }
+		}
+
+		/* Desktops (min-width: 1024px) */
+		@media only screen and (min-width: 1024px) {
+		  .container {
+			flex-direction: row;
+		  }
+		  .left-side {
+			width: 60%;
+		  }
+		  .right-side {
+			width: 40%;
+		  }
+		  .contact-info {
+			text-align: right;
+		  }
+		  .contact-info img {
+			width: 100%;
+		  }
+		  .navbar {
+			flex-direction: row;
+		  }
+		  nav ul {
+			flex-direction: row;
+		  }
+		  nav ul li {
+			margin-right: 20px;
+		  }
+		  .project-grid {
+			flex-direction: row;
+		  }
+		  .project-item {
+			margin-right: 20px;
+		  }
+		  .work-item p{
+			font-size: 15px;
+		  }
+		  .work-item {
+			flex-direction: row;
+		  }
+		  .work-item img {
+			margin-left: 120px;
+			width: 300px;
+			height: 200px;
+		  }
+		  .achievement-grid {
+			grid-template-columns: 1fr 1fr 1fr;
+		  }
+		  .achievement-box {
+			margin-bottom: 20px;
+		  }
+		  .contact {
+			flex-direction: row;
+		  }
+		  .contactme {
+			margin-bottom: 20px;
+		  }
+		  .socialmedia {
+			flex-direction: row;
+		  }
+		  .socialmedia img {
+			width: 100%;
+		  }
+		}
+	</style>
+</head>
+
+<body>
+	<section id="#home">
+		<div class="container">
+			<div class="left-side">
+				<div class="content">
+					<h4>Portfolio.</h4>
+					<h1 class="typing-text">I'M SYAM BABU </h1>
+					<a href="#about" class="button">PYTHON FULL STACK DEVELOPER <span style="font-size:24px;">→</span></a>
+				</div>
+			</div>
+
+			<div class="right-side">
+				<div class="contact-info">
+					<nav class="navbar">
+						<ul>
+							<li><a href="#home">Home</a></li>
+						</ul>
+						<ul>
+							<li><a href="#about">About</a></li>
+						</ul>
+						<ul>
+							<li><a href="#resume">Resume</a></li>
+						</ul>
+						<ul>
+							<li><a href="#projects">Projects</a></li>
+						</ul>
+						<ul>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+					<center>
+						<img src="https://res.cloudinary.com/dpokywvc3/image/upload/v1727855841/IMG_20240927_175201_enhanced.jpg-removebg-preview_b6rf5q.png" alt="image" class="syam">
+					</center>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<div class="container2">
+			<div class="left-section">
+				<div class="container">
+					<img src="https://th.bing.com/th/id/OIP.Q9KUnLeSoZxUv2U7jvL2vQHaHa?rs=1&pid=ImgDetMain" alt="Background Image" class="background-image1">
+					<img src="https://res.cloudinary.com/dpokywvc3/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1728135351/IMG_20241005_185918_ipxzac.jpg" alt="Overlay Image" class="overlay-image1">
+				</div>
+			</div>
+			<div class="right-section">
+				<center>
+					<h1>About Me <span><h4>________________________________________________________________	</h4></span></h1>
+				</center>
+
+				<p style="font-size: 12px;">As a Python Full Stack Developer, I bring expertise in both front-end and back-end technologies, creating robust and dynamic web applications. I design responsive and user-friendly interfaces using HTML, CSS, and JavaScript, while leveraging ReactJS for performance-enhanced components. I also use Python and Django to build scalable server-side logic and manage databases with MySQL.</p>
+				<div>
+					<div class="btns">
+						<button class="btn" ><a href="https://console.cloudinary.com/console/c-3c120edbbc7b70e4b42912592a1024/media_library/folders/home/asset/adcd01bea5031e3acfd642182c78983b/manage?view_mode=mosaic&context=manage">Download Resume</a></button>
+						<button class="btn"><a href="#contact">Contact Me</a></button>
+						<button class="btn"><a href="https://www.instagram.com/syam_1_13_21_19/?igsh=NTc4MTIwNjQ2YQ%3D%3D">Follow Me</a></button>
+					</div>
+				</div>
+
+			</div>
+	 </div>
+	</section>
+	<section id="projects">
+		<div class="container3">
+			<section class="portfolio">
+				<h2>Recent Projects</h2>
+				<center>
+					<h4>_______________________________________</h4>
+				</center>
+
+				<div class="project-grid">
+
+					<div class="project-item">
+						<a href="https://github.com/syambabu911?tab=repositories"><img src="https://th.bing.com/th/id/OIP.DIWO9z7rNdoiffsdr_4_NgHaE8?rs=1&pid=ImgDetMain" alt="image1"></a>
+						<p>Storing each person and items details using Python and Mysql</p>
+
+					</div>
+
+					<div class="project-item">
+						<a href="https://github.com/syambabu911?tab=repositories"><img src="https://thumbs.dreamstime.com/b/rice-table-against-green-field-long-white-burlap-sack-wooden-bowl-ears-agricultural-185860258.jpg" alt="image2"></a>
+						<p>Fetching and storing the details using Django</p>
+					</div>
+
+					<div class="project-item">
+						<a href="https://github.com/syambabu911?tab=repositories"><img src="https://th.bing.com/th/id/OIP.HnJENvPGFJrsr2Ecp9va1AHaEK?w=1280&h=720&rs=1&pid=ImgDetMain" alt="image3" style="height: 200px;"></a>
+						<p>online courses purchasing each person details using React js & Django</p>
+
+					</div>
+
+				</div>
+			</section>
+			<section>
+				<div class="container4">
+					<center>
+						<h1>My Best Works</h1>
+						<h4>____________________________________________</h4>
+
+					</center>
+
+					<div class="work-item">
+						<a href="https://github.com/syambabu911?tab=repositories"><img src="https://thumbs.dreamstime.com/b/online-courses-text-white-paper-background-colour-pencils-279140021.jpg" alt="Design 1"></a>
+						<div class="work-description">
+							<h3>2023 Best Design</h3>
+							<p>
+								Developed an online course platform using React.js for a dynamic front-end and Django as the back-end for efficient database management. Implemented REST APIs to handle user authentication, course purchases, and transaction processing. Integrated a secure payment gateway and token-based authentication to ensure smooth and secure user interactions.</p>
+						</div>
+					</div>
+
+					<div class="work-item">
+						<a href="https://github.com/syambabu911?tab=repositories"><img src="https://thumbs.dreamstime.com/b/rice-table-against-green-field-long-white-burlap-sack-wooden-bowl-ears-agricultural-185860258.jpg" alt="Design 2"></a>
+						<div class="work-description">
+							<h3>2023 Best Design</h3>
+							<p>I am developing a comprehensive Paddy Management System using Django, incorporating HTML, CSS, and JavaScript for a seamless user experience. The app focuses on securely storing and managing farmers' records, including rice bag transactions between mills and export locations, with features like pagination, CRUD operations, and login credentials for data protection. Additionally, the app includes entertainment via YouTube, weather predictions, and classic games like Snakes (Vykanthapalli), enhancing user engagement.</p>
+						</div>
+					</div>
+
+					<a href="https://github.com/syambabu911?tab=repositories" class="see-more">See More →</a>
+				</div>
+			</section>
+
+		</div>
+	</section>
+	<section id="resume">
+		<div class="container5" >
+			<div class="left-side1" >
+				<h2>Personal Skills</h2>
+				<h4>____________________________________________</h4>
+
+				<p>As a highly motivated and detail-oriented Full Stack Developer with expertise in Python, Django, and front-end technologies like React and JavaScript, I seek to leverage my skills in designing, developing, and deploying robust web applications. With a strong foundation in both back-end and front-end development, I aim to contribute to dynamic teams by delivering scalable, efficient, and user-friendly solutions. Passionate about continuous learning and staying updated with the latest industry trends, my goal is to drive innovation and excellence in full stack development while enhancing my technical and leadership skills.</p>
+				<div class="skills">
+					<div class="skill">
+						<h3>PYTHON</h3>
+						<div class="progress-bar">
+							<div class="progress" style="width: 90%;">90%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h3>MYSQL</h3>
+						<div class="progress-bar">
+							<div class="progress" style="width: 80%;">80%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h3>DJANGO</h3>
+						<div class="progress-bar">
+							<div class=" progress" style="width: 95%;">90%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h3>REACT JS</h3>
+						<div class="progress-bar">
+							<div class="progress" style="width: 95%;">85%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h3>WEBSCRAPPING</h3>
+						<div class="progress-bar">
+							<div class="progress" style="width: 95%;">75%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h3>HTML & CSS</h3>
+						<div class="progress-bar">
+							<div class="progress" style="width: 95%;">95%</div>
+						</div>
+					</div>
+					<div class="skill">
+						<h3>JAVASCRIPT</h3>
+						<div class="progress-bar">
+							<div class="progress" style="width: 95%;">85%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-side1">
+				<div class="container">
+					<img src="https://th.bing.com/th/id/OIP.Q9KUnLeSoZxUv2U7jvL2vQHaHa?rs=1&pid=ImgDetMain" alt="Background Image" class="background-image">
+					<img  src="https://res.cloudinary.com/dpokywvc3/image/upload/v1728185108/Yl9yZ2I6QzJDOUQ2L2NfY3JvcCx3XzQwMCxoXzQwMCxhcl8xOjEsZ19hdXRvLGVfaW1wcm92ZSxlX3NoYXJwZW4_lef6oh.jpg" alt="Overlay Image" class="overlay-image">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="achievement-section">
+		<center>
+			<h2>EDUCATION</h2>
+			<h4>_____________________________________________</h4>
+
+		</center>
+
+		<div class="achievement-grid">
+			<div class="achievement-box">
+				<h3>2019 - 2023</h3>
+				<div style="display: flex; flex-direction: row;color: rgb(237, 38, 78);">
+					<span>BACHELOR OF ENGINERRING</span>
+				</div><br>
+				<i>Sagi Rama Krishnam Raju College, <b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+					<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+				  </svg>Bhimavaram</b></i>
+				
+				<h5>Grade: First Class</h5>
+			</div>
+
+			<div class="achievement-box">
+				<h3>2017 - 2019</h3>
+				<div style="display: flex; flex-direction: row;color: rgb(237, 38, 38);">
+					<span>I</span>
+					<span>N</span>
+					<span>T</span>
+					<span>E</span>
+					<span>R</span>
+					<span>M</span>
+					<span>E</span>
+					<span>D</span>
+					<span>I</span>
+					<span>A</span>
+					<span>T</span>
+					<span>E</span>
+				</div><br>
+				<i>A.P.S.W Residential College, <b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+					<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+				  </svg>Krishna Rao Palem</b></i>
+				<h5>Grade: First Class with Distinction</h5>
+			</div>
+
+			<div class="achievement-box">
+				<h3>2017</h3>
+				<div style="display: flex; flex-direction: row;color: rgb(237, 38, 38);">
+					<span>S</span>
+					<span>S</span>
+					<span>C</span>
+				</div><br>
+				<i>A.P.S.W Residential School, <b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+					<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+				  </svg>Krishna Rao Palem</b></i>
+				<h5>Grade: First Class</h5>
+			</div>
+		</div>
+	</section>
+	<section class="achievement-section2">
+		<center>
+			<h2>EXPERIENCE</h2>
+			<h4>____________________________________________</h4>
+			<div class="achievement-grid2">
+				<div class="achievement-box2">
+					<h 3>Internship at Vcube Software Solutions</h3>
+					<p><strong>Duration:</strong> June 1, 2024 - October 2024</p>
+					<p class="experience-details">
+						Completed a 5-month internship at Vcube Software Solutions, Hyderabad, where I contributed to real-world projects, working alongside experienced developers. Gained hands-on experience in full-stack development, problem-solving, and collaborative teamwork. Received a monthly stipend of ₹15,000 for the duration of the internship.
+					</p>
+				</div>
+
+			</div>
+			<div class="achievement-grid2">
+				<div class="achievement-box2">
+					<h3>Python Full Stack Development Course</h3>
+					<p><strong>Duration:</strong> December 1, 2023 - May 1, 2024</p>
+					<p class="experience-details">
+						Successfully completed an intensive Python Full Stack development course, gaining comprehensive knowledge in both front-end and back-end development. The curriculum covered key technologies including Python, Django, JavaScript, React, HTML, CSS, and databases such as MySQL and PostgreSQL.
+					</p>
+				</div>
+
+			</div>
+		</center>
+	</section>
+	<section id="contact">
+		<section class="achievement-section">
+			<center>
+				<h2>Contact Me</h2>
+				<h4>_____________________________________________</h4>
+				<p>Below are the details to reach out me</p>
+				<div class="contact">
+					<div class="contactme">
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+							<path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+						</svg>
+						<h3>Address</h3>
+						<p>Vijayawada,india</p>
+					</div>
+					<div class="contactme">
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+							<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+							<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+						</svg>
+						<h3>Contact number</h3>
+						<p>7671888503</p>
+					</div>
+					       <div class="contactme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg>
+                    <h3>Email address</h3>
+                    <p>syambabu911@gmail.com</p>
+                </div>
+                <div class="contactme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
+                      </svg>
+                    <h3>Download resume</h3>
+                    <a href="https://console.cloudinary.com/console/c-3c120edbbc7b70e4b42912592a1024/media_library/folders/home/asset/adcd01bea5031e3acfd642182c78983b/manage?view_mode=mosaic&context=manage
+                " download="syam_resume.docx" style="text-decoration: none;color: rgb(11, 113, 237);">
+                <p>https://resume link</p>
+                </a>
+                    
+                    
+                </div>
+            </div>
+            <div class="socialmedia">
+                <h4>Find on me</h4>
+                <img src="https://th.bing.com/th/id/R.081ce05bc3656317e46d6cb618df56db?rik=VQ7S%2fCzJ55Nkww&riu=http%3a%2f%2fis1.mzstatic.com%2fimage%2fthumb%2fPurple118%2fv4%2fbb%2f55%2f81%2fbb55819d-6515-e7f2-964d-ac8712ffe5d0%2fsource%2f1200x630bb.jpg&ehk=Aqp6CidEsUDv1bwL3Gb7OCL1LBBi8mX9kCMa6GM2Xcc%3d&risl=&pid=ImgRaw&r=0" alt="indeed">
+                <img src="https://th.bing.com/th/id/R.b757f2bca8039d4a08882d38f4c1b8f0?rik=l1HvTt1fIsaMmQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ftwitter-logo-png-logo-twitter-in-png-2500.png&ehk=qSLAOlUdmImpXk6Jj6NUgKgK5gv%2fq1TGUwvlzdeBiNA%3d&risl=&pid=ImgRaw&r=0" alt="twitter">
+                <img src="https://freepngimg.com/thumb/facebook/65283-icons-wallpaper-desktop-fb-computer-facebook-logo.png" alt="facebook">
+                <img src="https://th.bing.com/th/id/OIP.A_QLZ7Y9nBwaWnkhCbvGmQHaHZ?w=1455&h=1454&rs=1&pid=ImgDetMain" alt="instagram">
+				
+            </div>
+            
+        </center>
+    
+    </section>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+        <p class="footer-message">Copyright 2023. All rights reserved.</p>
+        <p class="footer-message">Designed with love by [syambabu]</p>
+    </div>
+</footer>
+<script>
+	// Add this to your HTML file or an external JavaScript file
+window.addEventListener('scroll', () => {
+  const containers = document.querySelectorAll('#contact,.container2,.container3,.container4,.container5');
+  containers.forEach((container) => {
+    const rect = container.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      container.style.animation = 'slideIn 2s forwards';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
